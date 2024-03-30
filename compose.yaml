@@ -9,7 +9,9 @@ services:
     image: wiremock/wiremock
     volumes:
       - ./wiremock:/home/wiremock
-    command: [ "--https-port", "8443", "--disable-http", "--verbose" ]
+    command: [ "--https-port", "8443",
+               "--disable-http",
+               "--verbose" ]
     ports:
       - "8443:8443"
   wiremock-ssl-p12:
