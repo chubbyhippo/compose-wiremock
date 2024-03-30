@@ -5,3 +5,10 @@ services:
       - ./wiremock:/home/wiremock
     ports:
       - "8080:8080"
+  wiremock-ssl:
+    image: wiremock/wiremock
+    volumes:
+      - ./wiremock:/home/wiremock
+    command: [ "--https-port", "8443", "--verbose" ]
+    ports:
+      - "8443:8443"
