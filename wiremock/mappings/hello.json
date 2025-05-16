@@ -1,12 +1,13 @@
 {
   "request": {
     "method": "GET",
-    "urlPathPattern": "/hello"
+    "url": "/hello"
   },
   "response": {
     "status": 200,
-    "jsonBody": {
-      "message": "hello"
+    "body": "hello",
+    "headers": {
+      "Content-Type": "text/plain"
     }
   }
 }
